@@ -91,3 +91,5 @@ plt.imshow(mywordCloud.recolor(color_func=imageColors))
 plt.imshow(mywordCloud)
 plt.axis("off")
 plt.show()
+import os
+mywordCloud.to_file(os.path.join("cloud.png"))
