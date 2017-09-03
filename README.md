@@ -5,7 +5,7 @@ This is a repo about using itchat lib to extract someone's wechat information
 ## File struture explaination
 ### grab_Wechat_Friends.ipynb
 
-The main file of the programme, as you can tell from the file fromat, ipython and jupyter is needed as for this programme.
+The main file of the programme, as you can tell from the file fromat, ipython and jupyter is needed as for this programme. I strongly recommend that you use this file to reappear all the results.
 
 ### grab_Wechat_Friends.py
 The another format of snippets code in python format. Literally I just paste the code in jupyter notebook to this one file.
