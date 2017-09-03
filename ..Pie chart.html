@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.1.10/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 100vw; height: 100vh;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    "series": [
+        {
+            "radius": [
+                "50%", 
+                "70%"
+            ], 
+            "data": [
+                {
+                    "name": "\u7537\u6027 58.18%", 
+                    "value": 320
+                }, 
+                {
+                    "name": "\u5973\u6027 38.36%", 
+                    "value": 211
+                }, 
+                {
+                    "name": "\u5176\u4ed6 3.45%", 
+                    "value": 19
+                }
+            ], 
+            "name": "WeChat", 
+            "type": "pie"
+        }
+    ], 
+    "yAxis": [
+        {}
+    ], 
+    "legend": {
+        "y": "top", 
+        "x": "center", 
+        "data": [
+            "Male", 
+            "Female", 
+            "Other"
+        ], 
+        "orient": "horizontal"
+    }, 
+    "xAxis": [
+        {}
+    ], 
+    "title": {
+        "text": "benson \u7684\u5fae\u4fe1\u597d\u53cb\u6027\u522b\u6bd4\u4f8b:", 
+        "subtext": "From Wechat"
+    }
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
