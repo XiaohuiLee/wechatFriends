@@ -87,6 +87,7 @@ mywordCloud = WordCloud(background_color="white",
                        ).generate(word_space_split)
 
 imageColors = ImageColorGenerator(coloring)
+plt.figure(figsize=(20,20))
 plt.imshow(mywordCloud.recolor(color_func=imageColors))
 plt.imshow(mywordCloud)
 plt.axis("off")
